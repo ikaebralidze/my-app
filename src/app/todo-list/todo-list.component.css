@@ -1,0 +1,78 @@
+#selector {
+  margin: 1%;
+  padding: 5px 16px;
+}
+
+.headers {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+hr {
+  border-top: none;
+  border-color: grey;
+}
+.box {
+  display: flex;
+}
+.txt {
+  font-family: "Courier New", Courier, monospace;
+}
+.btndiv {
+  display: inline;
+  position: relative;
+}
+.texx {
+  width: auto;
+  display: inline;
+}
+.todolist {
+  flex: 1;
+}
+.fwbtn {
+  padding: 3%;
+  background-color: lightblue;
+  border: none;
+  border-radius: 3%;
+  display: inline;
+  margin: 10% 5%;
+}
+.cancelbtn {
+  padding: 3%;
+  background-color: rgb(245, 64, 58);
+  border: none;
+  border-radius: 3%;
+  font-size: 1rem;
+}
+.input {
+  padding: 5px 15px;
+}
+
+.addButton {
+  background-color: rgb(50, 50, 248);
+  border: none;
+  padding: 12px;
+  margin: 1%;
+  border-radius: 15%;
+  width: 80px;
+  height: 40px;
+}
+.box div {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 2%;
+}
+
+.boxed-1 {
+  flex: 1;
+  background-color: lightcoral;
+}
+.boxed-2 {
+  flex: 1;
+  background-color: lightskyblue;
+}
+.boxed-3 {
+  flex: 1;
+  background-color: rgb(101, 228, 165);
+}

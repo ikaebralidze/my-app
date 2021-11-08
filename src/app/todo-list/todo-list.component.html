@@ -1,0 +1,46 @@
+<input class="input" type="text" [(ngModel)]="input" />
+
+<!-- <select name="1" id="selector" [(ngModel)]="ragaca">
+  <option *ngFor="let c of ragaca" [ngValue]="c">{{ c }}</option>
+</select> -->
+<button class="addButton" (click)="add()">Add</button>
+
+<div class="box">
+  <div class="boxed-1">
+    <div class="headers">Todo</div>
+    <hr />
+    <div class="todolist" *ngFor="let item of todoArr">
+      <div class="txt">
+        {{ item }}
+      </div>
+      <button class="fwbtn" type="submit" (click)="toProg(item)">
+        IN Progress
+      </button>
+      <button class="cancelbtn" type="submit" (click)="cancel(item)">X</button>
+      <hr />
+    </div>
+  </div>
+  <div class="boxed-2">
+    <div class="headers">Progress</div>
+    <hr />
+    <div *ngFor="let item of progressArr">
+      <div class="txt">
+        {{ item }}
+      </div>
+      <button class="fwbtn" type="submit" (click)="toDone(item)">DONE</button>
+      <button class="cancelbtn" type="submit" (click)="undo(item)">Undo</button>
+      <hr />
+    </div>
+  </div>
+  <div class="boxed-3">
+    <div class="headers">Done</div>
+    <hr />
+    <div *ngFor="let item of doneArr">
+      <div class="txt">
+        {{ item }}
+      </div>
+      <button class="fwbtn" type="submit" (click)="toGone(item)">GONE</button>
+      <hr />
+    </div>
+  </div>
+</div>
